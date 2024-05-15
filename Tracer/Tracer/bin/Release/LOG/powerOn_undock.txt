@@ -1,0 +1,486 @@
+HP bootloader Version: 1.3
+Start Verify Signature.....
+ active bank add:   0x9000 
+ inactive bank add: 0xA000 
+ bank0 add:         0x203ED 
+ bank0 len:         0x7268C 
+ bank1 add:         0x5683ED 
+ bank1 len:         0x6C7BC 
+ before skboot_authenticate
+ after skboot_authenticate :1522778970
+Authentication correct, status 1522778970!
+Hendrix/Fleetwood DB0 Thunderbolt Dock
+ BoardPowerSequence(): Start !!!
+VIRTUAL_G3 to High 
+adapter size:330 
+ID REF:1.538818 
+ID RD:3.085693 
+ID Ratio:20052.355469 
+
+Adapter size is over the board limit, set to max:180W
+ADAPT_VALID to High 
+eXe_RTC_Init
+start thread 0 ...
+
+[Wait_For_All_PD_Init_Completed ]:Start
+DEVICE_MODE=0x48435450.
+DEVICE_MODE=0x48435450.
+PatchLoaded->(no)!
+PatchLoaded->(no)!
+
+(PBMs)->1
+
+(PBMs)->1
+
+CMD =0x00000000->yes
+
+(Response size=1)->1
+
+(PBMs)->1
+
+CMD =0x00000000->yes
+
+(Response size=1)->1
+
+(PBMs)->1
+
+(PBMc)->1
+
+(PBMc)->1
+
+CMD =0x00000000->yes
+
+(Response size=4)->1
+
+(PBMc)->1
+
+CMD =0x00000000->yes
+
+(Response size=4)->1
+
+(PBMc)->1
+Patch Loaded on PD 0
+UNDOCK to LOW 
+i enter
+Patch Loaded on PD 1
+
+(I2Cr)->1
+i enter
+
+ PD#0 Int: cmd1 completed
+
+CMD =0x00000000->yes
+
+(Response size=2)->1
+
+(I2Cr)->1
+BUCK BOOST read back data: 0 2b
+FileX_LevelX_init 
+force_format : 0
+
+thread_FileX_LevelX_entryStart
+
+thread_FileX_LevelX_entryErase Flash: offset = 0x1000000, size = 5120 KB
+MainFlashMapDefault:StorageRegion.Address: 0x1000000
+MainFlashMapDefault:StorageRegion.Size: 0x500000
+
+thread_FileX_LevelX_entryreal_sector_count = 0x500 
+
+
+_lx_spi_flash_initialize Start
+
+Nor_Flash_Init 
+
+ end=1500000
+
+_lx_spi_flash_initialize End
+
+thread_FileX_LevelX_entry find matched Disk Name 
+AvariableSapce:0x4f9000
+
+thread_FileX_LevelX_entry  find matched Disk Name 
+AvariableSapce:0x4f9000
+
+thread_FileX_LevelX_entry End
+
+WiFi_BT_init 
+
+EMC1702_init
+
+Power_throttle_Init
+
+Temperature_Init
+actual_flags : 1
+init_finish : 1
+
+eXe_LED_Ctrl_Init
+
+[Disable_UFP_PD_Function ]:Start
+
+[USBC_PD_UFP_Force_Ctrl ]:Start
+
+[USBC_PD_UFP_Force_Ctrl ]Disable UFP PD Function
+[check_config_version_different]:Config Ver = 0013(n) v.s 0013(o)
+
+[FUM_DataInit]:Start
+
+[Install component fw update to system component fw update list].
+
+[Component_FwUpdate_Init]:Start
+
+[eXe_Init ]:Start
+
+[eXe_GetVerion ]:Start
+
+[FUM_Register_Component_FwUpdate]:Start
+
+[RTL8720_Init ]:Start
+i enter
+
+EMC1702_interrupt_entry_thread
+
+EMC1702_intial_control
+
+Power_throttle_interrupt_entry_thread
+
+Temperature_interrupt_entry_thread
+
+LED_Ctrl_entry_thread
+board_watt 0.000000
+adapter_size 180.000000
+remained_watt 175.000000
+temp:32.625000  temp region: 1
+Hi/low limit:34  0
+[Set_Dock_Setting]:LED 1
+[Set_Dock_Setting]:ETHERNET 1
+[set_Dock_Serial_Number]:Dock Serial Number is NULL
+[Get_Registered_Host_Info]:index=0
+[Get_Registered_Host_Info]:serial=
+[Get_Registered_Host_Info]:key=
+0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+[Get_Registered_Host_Info]:key_p=
+0xE6 0x1E 0xE2 0x98 0x5D 0xA4 0x8B 0x9F 0x32 0x0D 0xF0 0x73 0xF4 0xB9 0x4E 0xF7 0xF4 0x30 0x04 0x21 0xD1 0x3D 0xA7 0xC6 0x9F 0xEB 0x55 0x83 0xE6 0x01 0xB1 0xE3 
+[Get_Registered_Host_Info]:index=1
+[Get_Registered_Host_Info]:serial=
+[Get_Registered_Host_Info]:key=
+0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+[Get_Registered_Host_Info]:key_p=
+0xE6 0x1E 0xE2 0x98 0x5D 0xA4 0x8B 0x9F 0x32 0x0D 0xF0 0x73 0xF4 0xB9 0x4E 0xF7 0xF4 0x30 0x04 0x21 0xD1 0x3D 0xA7 0xC6 0x9F 0xEB 0x55 0x83 0xE6 0x01 0xB1 0xE3 
+[set_process_status]:1
+
+ CONFIGURE_LAN
+[Event_for_WiFi_process]:GET EVENT 1
+[ModuleSend]:ATMV
+
+[Sending_timeout_process]:Retry 1 ATMV
+
+[ModuleSend]:ATMV
+
+[Sending_timeout_process]:Retry Failed ATMV
+
+[ModuleSend]:ATMV
+
+
+[RTS5486_Init ]:Start
+
+[RTS5486_Check_Power_State ]:Start
+
+[RTS5486_Power_On ]:Start
+
+[RTS5486_GEN1_GetVerion ]:Start
+
+[RTS5486_Power_Off ]:Start
+
+[FUM_Register_Component_FwUpdate]:Start
+GR version: 43.0.3
+
+[FUM_Register_Component_FwUpdate]:Start
+
+[VMM_Init ]:Start
+
+[VMM_GetVerion ]:Start
+
+[VMM_Power_On ]:Start
+
+[VMM_Power_Off ]:Start
+
+[FUM_Register_Component_FwUpdate]:Start
+
+[TI_PD_65994_Init ]:Start
+
+[FUM_Register_Component_FwUpdate]:Start
+
+[FUM_CreateCompositeInfo]:Start
+
+[FUM_GetAvailableFwBlockAddress]:Start
+
+[FUM_GetAcitvatedBlockRecord]:Start
+
+[FUM_GetAcitvatedBlockRecord]:ActivedVersion:0x00211102 Address:0x00020000
+
+[FUM_DataInit]:CreateCompositeInfo Status:0
+
+[FUM_GetAcitvatedBlockRecord]:Start
+
+[FUM_GetAcitvatedBlockRecord]:ActivedVersion:0x00211102 Address:0x00020000
+
+[FUM_DataInit]:Get Acitvated Block Record Address:0x00020000 Version:0x00211102
+
+[FUM_CreateCompositeInfo]:Start
+
+[FUM_GetAvailableFwBlockAddress]:Start
+
+[FUM_GetAcitvatedBlockRecord]:Start
+
+[FUM_GetAcitvatedBlockRecord]:ActivedVersion:0x00211102 Address:0x00020000
+
+[FUM_AddCompositeToSystemList]:Start
+CfuComponentId:10
+*****************************************************
+gSystemActivedComposite.BaseAddress:20000
+*****************************************************
+
+[IPM_DecodeHeaderMain ]:Start
+
+[IPM_ReadHeaderFromFlashRom ]:Start :Address:0x00020000
+
+[IPM_FindIdentifier ]:Start
+[IPM_FindIdentifier] Found Identifier at flash address:0x00000100 !!
+
+[IPM_DecodeTheHeader]:Start
+
+[IPM_FindIdentifier ]:Start
+[IPM_FindIdentifier] Found Identifier at flash address:0x00000000 !!
+Package Header Checksum:0x46e6b932
+
+[IPM_Verify_Header_CRC32]:StartFlashAddress:0x20100 !
+HeaderSize=0x02ed
+
+	Package Version:0x00211102
+	Device ID record count=0x04
+
+[IPM_DecodeTheHeader]:End
+
+[FUM_UpdateCmpInfoFromIPM]:Start
+InputComposite->BaseAddress:20000
+gSystemActivedComposite.Version:211102
+*****************************************************
+gSystemDownloadComposite.BaseAddress:568000
+*****************************************************
+
+[IPM_DecodeHeaderMain ]:Start
+
+[IPM_ReadHeaderFromFlashRom ]:Start :Address:0x00568000
+
+[IPM_FindIdentifier ]:Start
+[IPM_FindIdentifier] Found Identifier at flash address:0x00000100 !!
+
+[IPM_DecodeTheHeader]:Start
+
+[IPM_FindIdentifier ]:Start
+[IPM_FindIdentifier] Found Identifier at flash address:0x00000000 !!
+Package Header Checksum:0x9adddb08
+
+[IPM_Verify_Header_CRC32]:StartFlashAddress:0x568100 !
+HeaderSize=0x02ed
+
+	Package Version:0x00210102
+	Device ID record count=0x04
+
+[IPM_DecodeTheHeader]:End
+
+[FUM_UpdateCmpInfoFromIPM]:Start
+InputComposite->BaseAddress:568000
+Warning!! Recorded Composite version is not the same as Composite Version in SPI rom!!!
+Recorded Actived Version :0x00211102
+Composite Version on Flash:0x00210102
+
+[CheckResumeFwUpdate]:Start
+
+[FUM_GetLastFwUpdateStatus]:Start
+
+[FUM_GetLastFwUpdateStatus]: No Update Record !
+Check the Resume Fw Update is with Error Code :2
+Offset      | Size        | Name
+-----------------------------------------------------------------
+0x00000000  | 0x00020000  | Sensitive Data Area
+0x00020000  | 0x00548000  | Composite Binary 0
+0x00568000  | 0x00548000  | Composite Binary 1
+0x00ab0000  | 0x00548000  | Composite Binary Download
+0x00ff8000  | 0x00008000  | Scratch Pad
+0x01000000  | 0x00500000  | Storage Block
+0x01000000  | 0x00d00000  | Reserved Region
+0x01d00000  | 0x00300000  | Certification File
+-----------------------------------------------------------------
+[1;1H[2J
+[Composite Version]: 00.21.11.02
+-----------------------|-------------
+Component Name         | Version(hex)
+-----------------------|-------------
+eXe                    | 00.32.01.00
+USB3-HUB: RTS5486      | 00.02.00.0b
+Thunderbolt GR         | 00.43.00.03
+MST: VMM9433           | 09.02.75.50
+PD TI65994             | 00.04.01.00
+-----------------------|-------------
+
+[FUM_DataInit ]:End
+
+[CheckFirstRebootVerifyResult]: No Record or Record Incorrect !!!
+
+[FUM_CheckFactoryFirstPowerOnAndUpdate]:Start
+
+[FUM_GetAcitvatedBlockRecord]:Start
+
+[FUM_GetAcitvatedBlockRecord]:ActivedVersion:0x00211102 Address:0x00020000
+
+[FUM_CheckFactoryFirstPowerOnAndUpdate]:Version:211102 Address:20000 Status:0
+
+[HP_FUM_Init_thread]:
+
+[FUM_Init ]:End
+
+[Enable_UFP_PD_Function ]:Start
+
+[USBC_PD_UFP_Force_Ctrl ]:Start
+[Sending_timeout_process]:Retry 1 ATMV
+
+[ModuleSend]:ATMV
+
+
+[USBC_PD_UFP_Force_Ctrl ]Enable UFP PD Function
+
+[Hp_FUM_thread_entry]:
+
+[Hp_FUM_thread_entry]:FUM_WAIT_NOTIFY_P2_STATE
+i enter
+DP
+output Ti's add: 20 TI's io: 3, status:1
+
+(GPsh)->1
+i enter
+
+ PD#0 Int: cmd1 completed
+
+CMD =0x00000000->yes
+
+(GPsh)->1
+
+[thread_Main_entry]:Init HID Devices
+
+[CreatePlatformDeviceUSB]:Start
+
+[Get_Serial_Number]:Start
+
+[Get_Serial_Number]:Warning! The Serial Number is not valid. Assign a default value <123456789A>
+[CFU_Init]:Start
+[CFU_Init]:End
+
+HP_HID_Init() HP_HID_DEVICE_LENGTH:39
+
+HP_HID_Init(): tx_thread_create Status:0
+
+[cfu_thread_entry]:Start
+
+[cfu_Data_init]:Start
+
+CompositeListPtr->CompositePtr->CfuComponentId:10
+
+[cfu_Data_init]:End
+Hp_Hid_thread_entry().current_time:11303...
+
+[FUM_Get_Component_FwUpdate_Ptr]:Start
+
+[FUM_Get_Component_FwUpdate_Ptr]:Found
+[Sending_timeout_process]:Retry Failed ATMV
+
+[Event_for_WiFi_process]:GET EVENT 1
+[ModuleSend]:ATMV
+
+[Sending_timeout_process]:Retry 1 ATMV
+
+[ModuleSend]:ATMV
+
+[WiFi_BT_Version_Check_Update]:Get Version Failed
+[1;1H[2JWelcome to Hendrix/Fleetwood eXe Factory Test Version: 00.32.01.00
+        1. Test All I2C Interfaces
+        2. Test All UART Interfaces
+        3. Test VMM's USB Interfaces
+        4. Test SPI               
+        5. Individual Ports Testing
+        6. Show OSD
+        7. VMM
+        8. FUM/IPM Test
+        A. RGB LED Test
+OSD welcome
+[Sending_timeout_process]:Retry Failed ATMV
+
+[ModuleSend]:ATMV
+
+[Sending_timeout_process]:Retry 1 ATMV
+
+[ModuleSend]:ATMV
+
+
+Port(3):Connection Status:1 Resolution:1920 X 1080 ,active status 1
+[VMM_WriteTransact ]:VMM Error code: 1
+ Invalid argument 
+
+Port(3):Connection Status:1 Resolution:1920 X 1080 ,active status 1
+[Sending_timeout_process]:Retry Failed ATMV
+
+[ModuleSend]:ATMV
+
+[Sending_timeout_process]:Retry 1 ATMV
+
+[ModuleSend]:ATMV
+
+[Sending_timeout_process]:Retry Failed ATMV
+
+[ModuleSend]:ATMV
+
+[Sending_timeout_process]:Retry 1 ATMV
+
+[ModuleSend]:ATMV
+
+[Sending_timeout_process]:Retry Failed ATMV
+
+[ModuleSend]:ATMV
+
+[Sending_timeout_process]:Retry 1 ATMV
+
+[ModuleSend]:ATMV
+
+[Sending_timeout_process]:Retry Failed ATMV
+
+[ModuleSend]:ATMV
+
+[Sending_timeout_process]:Retry 1 ATMV
+
+[ModuleSend]:ATMV
+
+[Sending_timeout_process]:Retry Failed ATMV
+
+[ModuleSend]:ATMV
+
+[Sending_timeout_process]:Retry 1 ATMV
+
+[ModuleSend]:ATMV
+
+
+OSD off
+[VMM_WriteTransact ]:VMM Error code: 1
+ Invalid argument 
+[Sending_timeout_process]:Retry Failed ATMV
+
+[ModuleSend]:ATMV
+
+[Sending_timeout_process]:Retry 1 ATMV
+
+[ModuleSend]:ATMV
+
+[Sending_timeout_process]:Retry Failed ATMV
+
+[ModuleSend]:ATMV
+
+

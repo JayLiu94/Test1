@@ -1,0 +1,564 @@
+Opened Serial Port!!!  
+HP bootloader Version: 1.3
+Start Verify Signature.....
+ active bank add:   0xA000 
+ inactive bank add: 0x9000 
+ bank0 add:         0x20463 
+ bank0 len:         0x6E13C 
+ bank1 add:         0x568463 
+ bank1 len:         0x6E634 
+ before skboot_authenticate
+ after skboot_authenticate :1522778970
+Authentication correct, status 1522778970!
+Hendrix/Fleetwood DB0 Thunderbolt Dock
+ BoardPowerSequence(): Start !!!
+VIRTUAL_G3 to High 
+adapter size:330 
+ID REF:1.521094 
+ID RD:3.057495 
+ID Ratio:20100.636719 
+ADAPT_VALID to High 
+eXe_RTC_Init
+
+eXe_LED_Ctrl_Init
+start thread 0 ...
+
+LED_Ctrl_entry_thread
+
+[Get_Remaining_Power_Budget]:
+	board_loading_watt(mW): 0.000000
+	g_adapter_size(mW): 330000
+	remained_watt(mW) : 325000
+
+[TPS6599xInit]:init EPR:mWattage:325000
+
+[Get_Remaining_Power_Budget]:
+	board_loading_watt(mW): 0.000000
+	g_adapter_size(mW): 330000
+	remained_watt(mW) : 325000
+BUCKBOOST read error, should not be here!!!
+
+[Enable_Barrel_Charging]:Enable Barrel Charging
+
+[TI_PD_GPIO_Enable_Barrel_Charging ]:Start
+
+LED_Ctrl_entry_thread:Action:16, should not be here, Fail-> Ti's add: 22 TI's io: 7, status:1
+
+FileX_LevelX_init 
+force_format : 0
+Behavior:13, Priority:3 
+
+[RGB_LED_Off]
+
+thread_FileX_LevelX_entryStart
+
+thread_FileX_LevelX_entryErase Flash: offset = 0x1000000, size = 5120 KB
+MainFlashMapDefault:StorageRegion.Address: 0x1000000
+MainFlashMapDefault:StorageRegion.Size: 0x500000
+
+thread_FileX_LevelX_entryreal_sector_count = 0x500 
+
+
+_lx_spi_flash_initialize Start
+
+Nor_Flash_Init 
+
+ end=1500000
+
+_lx_spi_flash_initialize End
+
+thread_FileX_LevelX_entry find matched Disk Name 
+AvariableSapce:0x4f9000
+
+thread_FileX_LevelX_entry  find matched Disk Name 
+AvariableSapce:0x4f9000
+
+thread_FileX_LevelX_entry End
+
+WiFi_BT_init 
+
+EMC1702_init
+
+Power_throttle_Init
+
+Temperature_Init
+actual_flags : 1
+init_finish : 1
+
+[FUM_DataInit]:Start
+
+[Install component fw update to system component fw update list].
+
+[Component_FwUpdate_Init]:Start
+
+[eXe_Init ]:Start
+
+[eXe_GetVerion ]:Start
+
+[FUM_Register_Component_FwUpdate]:Start
+
+[RTL8720_Init ]:Start
+[check_config_version_different]:Config Ver = 0013(n) v.s 0013(o)
+
+[Send_LED_Action]:Get Response Flag, status:7 flag:0
+UNDOCK to LOW 
+
+EMC1702_interrupt_entry_thread
+
+EMC1702_intial_control
+
+Power_throttle_interrupt_entry_thread
+
+Temperature_interrupt_entry_thread
+board_watt 0.000000
+adapter_size 330.000000
+remained_watt 325.000000
+temp:28.000000  temp region: 1
+Hi/low limit:34  0
+
+[LED_Ctrl_entry_thread]:send response event 0x0
+[Set_Dock_Setting]:LED 1
+[Set_Dock_Setting]:ETHERNET 1
+[set_Dock_Serial_Number]:000477030J
+[Get_Registered_Host_Info]:index=0
+[Get_Registered_Host_Info]:serial=
+[Get_Registered_Host_Info]:key=
+0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+[Get_Registered_Host_Info]:key_p=
+0xE6 0x1E 0xE2 0x98 0x5D 0xA4 0x8B 0x9F 0x32 0x0D 0xF0 0x73 0xF4 0xB9 0x4E 0xF7 0xF4 0x30 0x04 0x21 0xD1 0x3D 0xA7 0xC6 0x9F 0xEB 0x55 0x83 0xE6 0x01 0xB1 0xE3 
+[Get_Registered_Host_Info]:index=1
+[Get_Registered_Host_Info]:serial=
+[Get_Registered_Host_Info]:key=
+0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 
+[Get_Registered_Host_Info]:key_p=
+0xE6 0x1E 0xE2 0x98 0x5D 0xA4 0x8B 0x9F 0x32 0x0D 0xF0 0x73 0xF4 0xB9 0x4E 0xF7 0xF4 0x30 0x04 0x21 0xD1 0x3D 0xA7 0xC6 0x9F 0xEB 0x55 0x83 0xE6 0x01 0xB1 0xE3 
+[set_process_status]:1
+[Event_for_WiFi_process]:GET EVENT 1
+[ModuleSend]:ATMV
+
+[WiFi_BLE_Command_Parsing]:cmd_length = 18, at_cmd = ATMV=00.21.07.00
+
+[ATMV_func]: 00.21.07.00
+
+[ATMV_func]:WiFi Module Version : 00.21.07.00
+[ModuleSend]:ATWP=1
+
+[WiFi_BLE_Command_Parsing]:cmd_length = 9, at_cmd = ATWP=0
+
+[ATWP_func]: 0
+
+[ModuleSend]:ATBf=1
+
+[get_WLAN_module_version]:00.21.07.00
+WLAN VER : 0x00210700
+WLAN VER STR:00.21.07.00
+
+[FUM_Register_Component_FwUpdate]:Start
+
+[RTS5425_Init ]:Start
+
+[RTS5425_Check_Power_State ]:Start
+
+[RTS5425_Power_On ]:Start
+[WiFi_BLE_Command_Parsing]:cmd_length = 9, at_cmd = ATBf=0
+
+[ATBf_func]: 0
+
+[ModuleSend]:ATBS=1,1,1
+
+[WiFi_BLE_Command_Parsing]:cmd_length = 9, at_cmd = ATBS=0
+
+[ATBS_func]: 0
+
+[set_process_status]:3
+[Set_Dock_Setting]:INSTADOCK 1
+[Event_for_WiFi_process]:GET EVENT 3
+[ModuleSend]:ATBS=1,1,1
+
+[WiFi_BLE_Command_Parsing]:cmd_length = 9, at_cmd = ATBS=0
+
+[ATBS_func]: 0
+
+[ModuleSend]:ATCN=IEC1-120549-1 4851,12345678,0
+
+
+[RTS5425_GetVerion ]:Start
+
+[FUM_Register_Component_FwUpdate]:Start
+
+[RTS5486_Init ]:Start
+
+[RTS5486_Check_Power_State ]:Start
+
+[RTS5486_Power_On ]:Start
+
+[RTS5486_GEN1_GetVerion ]:Start
+
+[RTS5486_Power_Off ]:Start
+
+[RTS5425_Power_Off ]:Start
+
+[FUM_Register_Component_FwUpdate]:Start
+GR version: 43.0.4
+
+[FUM_Register_Component_FwUpdate]:Start
+
+[FXVL_Init ]:Start
+
+[FXVL_Check_Power_State ]:Start
+
+[FXVL_Power_On ]:Start
+
+[FXVL_GetVerion ]:Start
+
+[FXVL_Check_Power_State ]:Start
+
+[upd_mctp_get_ep ]:Start
+
+[upd_mctp_set_ep ]:Start
+
+[upd_get_fw_ver_fxvl ]:Start
+FXVL version: 2.35
+
+[FXVL_Power_Off ]:Start
+
+[FUM_Register_Component_FwUpdate]:Start
+
+[VMM_Init ]:Start
+
+[VMM_GetVerion ]:Start
+
+[VMM_Power_On ]:Start
+
+[Send_LED_Action]:Get Response Flag, status:4 flag:21000000
+
+LED_Ctrl_
+[VMM_Power_Off ]:Start
+
+[FUM_Register_Component_FwUpdate]:Start
+
+[TI_PD_65994_Init ]:Start
+entry_thread:Act
+[FUM_Register_Component_FwUpdate]:Start
+
+[TI_PD_65992_Init ]:Start
+ion:0, Behavior:255, Priority:255 
+
+[FUM_Register_Component_FwUpdate]:Start
+
+[FUM_CreateCompositeInfo]:Start
+
+[FUM_GetAvailableFwBlockAddress]:Start
+
+[FUM_GetAcitvatedBlockRecord]:Start
+
+[FUM_GetAcitvatedBlockRecord]:ActivedVersion:0x00211200 Address:0x00568000
+
+[FUM_DataInit]:CreateCompositeInfo Status:0
+
+[FUM_GetAcitvatedBlockRecord]:Start
+
+[FUM_GetAcitvatedBlockRecord]:ActivedVersion:0x00211200 Address:0x00568000
+
+[FUM_DataInit]:Get Acitvated Block Record Address:0x00568000 Version:0x00211200
+
+[FUM_CreateCompositeInfo]:Start
+
+[FUM_GetAvailableFwBlockAddress]:Start
+
+[FUM_GetAcitvatedBlockRecord]:Start
+
+[FUM_GetAcitvatedBlockRecord]:ActivedVersion:0x00211200 Address:0x00568000
+
+[FUM_AddCompositeToSystemList]:Start
+CfuComponentId:11
+*****************************************************
+gSystemActivedComposite.BaseAddress:568000
+*****************************************************
+
+[IPM_DecodeHeaderMain ]:Start
+
+[IPM_ReadHeaderFromFlashRom ]:Start :Address:0x00568000
+
+[IPM_FindIdentifier ]:Start
+[IPM_FindIdentifier] Found Identifier at flash address:0x00000100 !!
+
+[IPM_DecodeTheHeader]:Start
+
+[IPM_FindIdentifier ]:Start
+[IPM_FindIdentifier] Found Identifier at flash address:0x00000000 !!
+Package Header Checksum:0xdf996db4
+
+[IPM_Verify_Header_CRC32]:StartFlashAddress:0x568100 !
+HeaderSize=0x0363
+
+	Package Version:0x00211200
+	Device ID record count=0x05
+
+[IPM_DecodeTheHeader]:End
+
+[FUM_UpdateCmpInfoFromIPM]:Start
+InputComposite->BaseAddress:568000
+gSystemActivedComposite.Version:211200
+*****************************************************
+gSystemDownloadComposite.BaseAddress:20000
+*****************************************************
+
+[IPM_DecodeHeaderMain ]:Start
+
+[IPM_ReadHeaderFromFlashRom ]:Start :Address:0x00020000
+
+[IPM_FindIdentifier ]:Start
+[IPM_FindIdentifier] Found Identifier at flash address:0x00000100 !!
+
+[IPM_DecodeTheHeader]:Start
+
+[IPM_FindIdentifier ]:Start
+[IPM_FindIdentifier] Found Identifier at flash address:0x00000000 !!
+Package Header Checksum:0x95e960da
+
+[IPM_Verify_Header_CRC32]:StartFlashAddress:0x20100 !
+HeaderSize=0x0363
+
+	Package Version:0x00211000
+	Device ID record count=0x05
+
+[IPM_DecodeTheHeader]:End
+
+[FUM_UpdateCmpInfoFromIPM]:Start
+InputComposite->BaseAddress:20000
+Warning!! Recorded Composite version is not the same as Composite Version in SPI rom!!!
+Recorded Actived Version :0x00211200
+Composite Version on Flash:0x00211000
+
+[CheckResumeFwUpdate]:Start
+
+[FUM_GetLastFwUpdateStatus]:Start
+
+[FUM_GetLastFwUpdateStatus]: No Update Record !
+Check the Resume Fw Update is with Error Code :2
+
+[FUM_CheckFactoryFirstPowerOnAndUpdate]:Start
+
+[FUM_GetAcitvatedBlockRecord]:Start
+
+[FUM_GetAcitvatedBlockRecord]:ActivedVersion:0x00211200 Address:0x00568000
+
+[FUM_CheckFactoryFirstPowerOnAndUpdate]:Version:211200 Address:568000 Status:0
+Offset      | Size        | Name
+-----------------------------------------------------------------
+0x00000000  | 0x00020000  | Sensitive Data Area
+0x00020000  | 0x00548000  | Composite Binary 0
+0x00568000  | 0x00548000  | Composite Binary 1
+0x00ab0000  | 0x00548000  | Composite Binary Download
+0x00ff8000  | 0x00008000  | Scratch Pad
+0x01000000  | 0x00500000  | Storage Block
+0x01000000  | 0x00d00000  | Reserved Region
+0x01d00000  | 0x00300000  | Certification File
+-----------------------------------------------------------------
+[1;1H[2J
+[Composite Version]: 00.21.12.00
+-----------------------|-------------
+Component Name         | Version(hex)
+-----------------------|-------------
+eXe                    | 00.21.12.00
+LAN : Intel I226       | 00.00.02.23
+UART-WLAN: RTL8720     | 00.21.07.00
+USB3-HUB: RTS5486      | 00.02.00.0b
+USB3-HUB: RTS5425      | 00.02.00.09
+Thunderbolt GR         | 00.43.00.04
+MST: VMM9433           | 09.02.75.50
+PD TI65994             | 00.03.09.01
+PD TI65992             | 00.03.02.00
+-----------------------|-------------
+
+[FUM_DataInit ]:End
+
+[CheckFirstRebootVerifyResult]: No Record or Record Incorrect !!!
+
+[HP_FUM_Init_thread]:
+
+[FUM_Init ]:End
+
+[LED_Ctrl_entry_thread]:send response event 0xd
+
+[Hp_FUM_thread_entry]:
+
+[Hp_FUM_thread_entry]:FUM_WAIT_NOTIFY_P2_STATE
+
+[thread_Main_entry]:Init HID Devices
+
+[CreatePlatformDeviceUSB]:Start
+
+[Get_Serial_Number]:Start
+[CFU_Init]:Start
+[CFU_Init]:End
+
+HP_HID_Init() HP_HID_DEVICE_LENGTH:39
+
+HP_HID_Init(): tx_thread_create Status:0
+
+[cfu_thread_entry]:Start
+
+[cfu_Data_init]:Start
+
+CompositeListPtr->CompositePtr->CfuComponentId:11
+
+[cfu_Data_init]:End
+Hp_Hid_thread_entry().current_time:7321...
+UFP_plug
+DOCKED to High 
+
+[FUM_Get_Component_FwUpdate_Ptr]:Start
+
+[FUM_Get_Component_FwUpdate_Ptr]:Found
+[Set_Dock_Setting]:INSTADOCK 0
+USB_HUB_PWR_ON to High 
+USB LAN
+LED_Ctrl_entry_thread:Action:16, Behavior:4, Priority:3 
+
+[RGB_LED_Off]
+
+[LED_Ctrl_entry_thread]:send response event 0xd
+
+[TIGetExtSinkCapabilities ]:Start
+[Check_DMC_Dock_Undock]:dock status 1
+USB LANLPS Increasing to 100W
+LPS Increasing to 100W
+Intel NICIntel NICDMC_SLAVE_READ
+DMC_SLAVE_CLOSE
+Intel NIC[CFU_hid_instance_activate]
+HP HID device activate
+HP_AM_InstaDock_Support !!!!!!!!!!!!!!!!
+ ProcessCFWUGetFWVersion...
+
+[GetVersionA ]:Start
+
+[FUM_CFU_GetVersion]:Start
+
+[GetProdInfoA ]:Start
+
+[FUM_CFU_GetProdInfo]:Start
+
+[OFFER_INFO_START_ENTIRE_TRANSACTION]  (0x00)
+
+Reject Reason: FIRMWARE_OFFER_REJECT_OLD_FW           (0x00)
+
+Status       : FIRMWARE_UPDATE_OFFER_ACCEPT           (0x01)
+....................................................
+
+
+[OFFER_INFO_START_OFFER_LIST]   (0x01)
+
+Reject Reason: FIRMWARE_OFFER_REJECT_OLD_FW           (0x00)
+
+Status       : FIRMWARE_UPDATE_OFFER_ACCEPT           (0x01)
+....................................................
+
+
+[ProcessOfferA ]:Start
+
+[ProcessOfferA ]:forceIgnoreVersion:0
+
+[ProcessOfferA ]:forceImmediateReset:0
+
+[FUM_CFU_GetVersion]:Start
+
+[ProcessOfferA ]:Reject Offer Version:0x00211200:0
+
+[FUM_CFU_Get_FwUpdate_Ownership_BY_ID]:Start
+
+[FUM_CFU_VersionFence]:Start
+
+[FUM_Version_Fencing]:Start: TargetVerion:0x00211200
+
+[ProcessOfferA ]:GetVersion:0x00211200 OfferVersion:0x00211200
+
+Reject Reason: FIRMWARE_OFFER_REJECT_OLD_FW           (0x00)
+
+Status       : FIRMWARE_UPDATE_OFFER_REJECT           (0x02)
+....................................................
+
+
+[OFFER_INFO_END_OFFER_LIST]            (0x02)
+
+Reject Reason: FIRMWARE_OFFER_REJECT_OLD_FW           (0x00)
+
+Status       : FIRMWARE_UPDATE_OFFER_ACCEPT           (0x01)
+....................................................
+
+
+[Send_LED_Action]:Get Response Flag, status:4 flag:61000000
+
+LED_Ctrl_entry_thread:Action:0, Behavior:255, Priority:255 
+
+[LED_Ctrl_entry_thread]:send response event 0xd
+[WiFi_BT_Version_Check_Update]:Get Version Failed
+[1;1H[2JWelcome to Hendrix/Fleetwood eXe Factory Test Version: 00.21.12.00
+        1. Test All I2C Interfaces
+        2. Test All UART Interfaces
+        3. Test VMM's USB Interfaces
+        4. Test SPI               
+        5. Individual Ports Testing
+        6. Show OSD
+        7. VMM
+        8. FUM/IPM Test
+        A. RGB LED Test
+PTG on in S0
+[WiFi_BLE_Command_Parsing]:cmd_length = 9, at_cmd = ATCN=1
+
+[ATCN_func]: 1
+
+[ATCN_func]:Failed to connect router
+[ATCN_func]:Concurrent AP...
+[ModuleSend]:ATWF=0
+
+[Event_for_WiFi_process]:GET EVENT 1
+[ModuleSend]:ATMV
+
+[WiFi_BLE_Command_Parsing]:cmd_length = 18, at_cmd = ATMV=00.21.07.00
+
+[ATMV_func]: 00.21.07.00
+
+[ATMV_func]:WiFi Module Version : 00.21.07.00
+[Event_for_WiFi_process]:GET EVENT 2
+[ModuleSend]:ATBS=0,0,0
+
+[WiFi_BLE_Command_Parsing]:cmd_length = 9, at_cmd = ATBS=0
+
+[ATBS_func]: 0
+
+[Event_for_WiFi_process]:GET EVENT 10
+[ModuleSend]:ATEVENT=0,1
+
+[Sending_timeout_process]:Retry 1 ATEVENT=0,1
+
+[ModuleSend]:ATEVENT=0,1
+
+[VMM_WriteTransact ]:VMM Error code: 1
+ Invalid argument 
+[VMM_WriteTransact ]:VMM Error code: 1
+ Invalid argument 
+[VMM_WriteTransact ]:VMM Error code: 1
+ Invalid argument 
+[VMM_WriteTransact ]:VMM Error code: 1
+ Invalid argument 
+[VMM_WriteTransact ]:VMM Error code: 1
+ Invalid argument 
+[VMM_WriteTransact ]:VMM Error code: 1
+ Invalid argument 
+[VMM_WriteTransact ]:VMM Error code: 1
+ Invalid argument 
+[Sending_timeout_process]:Retry 2 ATEVENT=0,1
+
+[ModuleSend]:ATEVENT=0,1
+
+[Sending_timeout_process]:Retry Failed ATEVENT=0,1
+
+[ModuleSend]:ATAU=HP Thunderbolt Dock G5_77030J,12345678,HPDock
+
+[WiFi_BLE_Command_Parsing]:cmd_length = 9, at_cmd = ATAU=0
+
+[ATAU_func]: 0
+
+Saved to C:\IEC\TOOL\Git_code\Tracer\Tracer\bin\Release\LOG\output_20240402_145449.txt!!!
